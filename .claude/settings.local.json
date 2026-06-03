@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(gh *)",
+      "PowerShell($gitPaths = @\\(\"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\", \"C:\\\\Program Files\\\\Git\\\\cmd\\\\git.exe\", \"C:\\\\Program Files \\(x86\\)\\\\Git\\\\bin\\\\git.exe\"\\); foreach \\($p in $gitPaths\\) { if \\(Test-Path $p\\) { Write-Output \"Found git: $p\" } }; $ghPaths = @\\(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\", \"$env:LOCALAPPDATA\\\\Programs\\\\GitHub CLI\\\\gh.exe\", \"$env:ProgramFiles\\\\GitHub CLI\\\\gh.exe\"\\); foreach \\($p in $ghPaths\\) { if \\(Test-Path $p\\) { Write-Output \"Found gh: $p\" } })"
+    ]
+  }
+}
