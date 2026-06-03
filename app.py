@@ -193,9 +193,10 @@ def main():
         <script>
         (function() {
             var p = window.parent;
-            if (p._ctrlEnterBound) return;
-            p._ctrlEnterBound = true;
-            p.document.addEventListener('keydown', function(e) {
+            if (p._ctrlEnterHandler) {
+                p.document.removeEventListener('keydown', p._ctrlEnterHandler);
+            }
+            p._ctrlEnterHandler = function(e) {
                 if (e.ctrlKey && e.key === 'Enter') {
                     var active = p.document.activeElement;
                     if (active && active.tagName === 'TEXTAREA') {
@@ -208,7 +209,8 @@ def main():
                         }
                     }
                 }
-            });
+            };
+            p.document.addEventListener('keydown', p._ctrlEnterHandler);
         })();
         </script>
     """, height=0)
