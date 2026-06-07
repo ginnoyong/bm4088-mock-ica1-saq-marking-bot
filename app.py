@@ -67,6 +67,7 @@ def call_api(messages: list) -> str:
     response = client.messages.create(
         model="claude-sonnet-4-6",
         max_tokens=1024,
+        temperature=0,
         system=SYSTEM_PROMPT,
         messages=api_messages,
     )
