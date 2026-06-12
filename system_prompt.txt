@@ -161,4 +161,4 @@ ALWAYS structure your response as:
 3. Justification against expected solutions — compare what the student did against the correct answer
 4. What would push the student higher (if not at A) — specific gap to close
 5. Confidence level — if you are not fully confident, state why
-6. Marker note — end with a single concise one-liner for the marker (e.g. a flag, a reminder, or a nudge about the most important thing to confirm or consider before finalising the grade)
+6. Student feedback — end with a single concise one-liner that the marker can use or adapt as feedback to the student, summarising the key strength or the most important gap in the student's response.
